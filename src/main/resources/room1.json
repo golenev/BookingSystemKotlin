@@ -1,0 +1,7 @@
+{
+  "roomSize" : "MINIMAL",
+  "roomType" : "STANDARD_ROOM",
+  "guestsQuantity" : 10,
+  "arrivalDate" : [ 2023, 5, 1, 0, 0 ],
+  "departureDay" : [ 2023, 5, 15, 0, 0 ]
+}

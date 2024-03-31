@@ -1,0 +1,7 @@
+{
+  "roomSize" : "LARGE",
+  "roomType" : "CONFERENCE_STUDIO",
+  "guestsQuantity" : 100,
+  "arrivalDate" : [ 2023, 5, 1, 0, 0 ],
+  "departureDay" : [ 2023, 5, 15, 0, 0 ]
+}
