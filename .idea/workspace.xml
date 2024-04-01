@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc350b5a-ddf8-4d0d-b67d-f700fa80166f" name="Changes" comment="" />
+    <list default="true" id="bc350b5a-ddf8-4d0d-b67d-f700fa80166f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/EntryPoint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/EntryPoint.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/enums/RoomSize.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/enums/RoomSize.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/enums/RoomType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/enums/RoomType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/manager/DateFormatter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/manager/DateFormatter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/BookingModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pojo/BookingModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/InvoiceModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pojo/InvoiceModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repository/MeetingRoomRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repository/MeetingRoomRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/services/MeetingRoomService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/services/MeetingRoomService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/JsonReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/JsonReader.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +29,19 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Data Class" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2eSu5UV3OdA2tnfiaSizxZ4OsJh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -28,12 +52,41 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build BookingSystemKotlin.executor": "Run",
+    "Kotlin.EntryPointKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/golenev/IdeaProjects/BookingSystemKotlin",
     "onboarding.tips.debug.path": "/home/golenev/IdeaProjects/BookingSystemKotlin/src/main/kotlin/Main.kt"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="EntryPointKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EntryPointKt" />
+      <module name="BookingSystemKotlin.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.EntryPointKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-e1d2075fd9a7-d4e022e8" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,16 +97,5 @@
       <updated>1711910118842</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
