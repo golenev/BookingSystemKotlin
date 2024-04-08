@@ -9,12 +9,8 @@ class DateFormatter {
     fun convertStringToDate(dateString: String?): LocalDateTime {
         // Определение формата даты
         val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy")
-        // Преобразование строки в LocalDate
-        val date = LocalDate.parse(dateString, formatter)
-        // Преобразование LocalDate в LocalDateTime на начало дня (полночь)
-        val dateTime = date.atStartOfDay()
-        return dateTime
+        // Преобразование строки в LocalDate // // Преобразование LocalDate в LocalDateTime на начало дня (полночь)
+        return LocalDate.parse(dateString.toString(), formatter).atStartOfDay()
     }
-
 
 }

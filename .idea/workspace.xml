@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc350b5a-ddf8-4d0d-b67d-f700fa80166f" name="Changes" comment="Внесены исправлены, чтобы было больше похоже на Котлин, а не на Java">
+    <list default="true" id="bc350b5a-ddf8-4d0d-b67d-f700fa80166f" name="Changes" comment="косметические исправления">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/manager/DateFormatter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/manager/DateFormatter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/services/MeetingRoomService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/services/MeetingRoomService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +48,11 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/golenev/IdeaProjects/BookingSystemKotlin&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/home/golenev/IdeaProjects/BookingSystemKotlin/src/main/kotlin/Main.kt&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;/home/golenev/.gradle&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -73,14 +77,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-e1d2075fd9a7-d4e022e8" />
-        <option value="jdk-21.0.2-corretto-21.0.2-3183f394aec4-99ec9c23" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,6 +86,19 @@
       <option name="presentableId" value="Default" />
       <updated>1711910118842</updated>
     </task>
+    <task id="LOCAL-00001" summary="косметические исправления">
+      <option name="closed" value="true" />
+      <created>1712332356084</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712332356084</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="косметические исправления" />
+    <option name="LAST_COMMIT_MESSAGE" value="косметические исправления" />
   </component>
 </project>
