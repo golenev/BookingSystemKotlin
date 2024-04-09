@@ -1,6 +1,6 @@
 import enums.RoomSize
 import enums.RoomType
-import manager.DateFormatter
+import util.DateFormatter
 import pojo.BookingModel
 import pojo.InvoiceModel
 import services.MeetingRoomService
@@ -35,7 +35,7 @@ class EntryPoint {
 
         for (i in 0 until 10) {
             val ast = "*"
-            Thread.sleep(400)
+            Thread.sleep(200)
             print("$ast ")
         }
         return BookingModel(

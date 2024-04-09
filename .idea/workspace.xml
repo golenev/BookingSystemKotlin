@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc350b5a-ddf8-4d0d-b67d-f700fa80166f" name="Changes" comment="косметические исправления">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/enums/EquipmentType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/manager/EquipmentManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/manager/RoomManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pojo/EquipmentModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pojo/RoomModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/repository/RoomBuilder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/manager/DateFormatter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/manager/DateFormatter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/EntryPoint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/EntryPoint.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/manager/DateFormatter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/DateFormatter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/BookingModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pojo/BookingModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +29,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Enum" />
-        <option value="Kotlin Data Class" />
         <option value="Class" />
+        <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -94,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712332356084</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="косметические исправления">
+      <option name="closed" value="true" />
+      <created>1712591998912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712591998912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -5,9 +5,7 @@ import enums.RoomType
 import java.time.LocalDateTime
 
 data class BookingModel(
-    val roomSize: RoomSize,
-    val roomType: RoomType,
-    val guestsQuantity: Int,
+    val roomModel: RoomModel,
     val arrivalDate: LocalDateTime,
     val departureDay: LocalDateTime
 )
