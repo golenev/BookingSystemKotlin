@@ -2,6 +2,6 @@ package pojo
 
 
 data class InvoiceModel(
-    val currentBookingRequest: BookingModel,
-    val bookingId: Int,
-    val clientName: String)
+    val currentBookingRequest: RoomModel,
+    val clientName: String
+)

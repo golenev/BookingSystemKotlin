@@ -7,5 +7,8 @@ data class RoomModel(
     val uniqueName: String,
     val maxCapacity: Int,
     val equipmentModels: List<EquipmentModel>,
-    var roomType: RoomType
+    val roomType: RoomType
 )
+{
+    constructor(id: Int, uniqueName: String, maxCapacity: Int) : this()
+}

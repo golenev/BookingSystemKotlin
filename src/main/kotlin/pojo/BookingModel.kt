@@ -1,7 +1,5 @@
 package pojo
 
-import enums.RoomSize
-import enums.RoomType
 import java.time.LocalDateTime
 
 data class BookingModel(

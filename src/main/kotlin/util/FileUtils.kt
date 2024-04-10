@@ -10,14 +10,14 @@ import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 
 class FileUtils {
 
-    fun saveObjectAsJson(obj: Any) {
+    fun saveObjectAsJson(obj: Any, uniquePrefix: String) {
         // Создаем экземпляр ObjectMapper и регистрируем модуль для работы с java.time.* классами
         val objectMapper = ObjectMapper().registerModule(JavaTimeModule())
         // Регистрируем модуль Kotlin для работы с data class
         objectMapper.registerKotlinModule()
 
         // Формируем уникальное имя файла
-        val fileName = "booking ${LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"))}.json"
+        val fileName = "booking_$uniquePrefix.json"
         // Формируем полный путь к файлу
         val filePath = Paths.get("src/main/resources/", fileName).toString()
 

@@ -1,6 +1,5 @@
 package repository
 
-import enums.EquipmentType
 import enums.RoomType
 import manager.RoomManager
 import pojo.EquipmentModel
@@ -8,8 +7,14 @@ import pojo.RoomModel
 
 class RoomBuilder : RoomManager {
 
-    override fun create(id: Int, name: String, maxCapacity: Int, equipments: List<EquipmentModel>, roomType: RoomType): RoomModel {
-      return RoomModel(id, name, maxCapacity, equipments, roomType)
+    override fun create(
+        id: Int,
+        uniqueName: String,
+        maxCapacity: Int,
+        equipmentModels: List<EquipmentModel>,
+        roomType: RoomType
+    ): RoomModel {
+        return RoomModel(id, uniqueName, maxCapacity, equipmentModels, roomType)
     }
 
     override fun delete(id: Int) {
@@ -20,3 +25,4 @@ class RoomBuilder : RoomManager {
         TODO("Not yet implemented")
     }
 }
+
