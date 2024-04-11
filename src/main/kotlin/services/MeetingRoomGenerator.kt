@@ -4,10 +4,13 @@ import com.github.javafaker.Faker
 import enums.EquipmentType
 import enums.RoomType
 import pojo.EquipmentModel
+import pojo.RequestRoom
 import pojo.RoomModel
 import repository.EquipmentBuilder
+import repository.EventManagerBuilder
 import repository.RoomBuilder
 import util.FileUtils
+import util.JsonReader
 
 
 class MeetingRoomGenerator {
@@ -36,14 +39,20 @@ class MeetingRoomGenerator {
     }
 
     fun bootRooms() {
-       // val wrapper = mapOf("List" to createRooms())
+        // val wrapper = mapOf("List" to createRooms())
         // createRooms();
-         FileUtils().saveObjectAsJson(createRooms(), "roomList")
+        FileUtils().saveObjectAsJson(createRooms(), "roomList")
     }
 }
 
 fun main() {
-    MeetingRoomGenerator().bootRooms()
+    // MeetingRoomGenerator().bootRooms()
+    //считываем список объектов из json или базы
+    val obj = JsonReader().objectifyJson("booking_roomList.json")
+    //кладём создаём объект желаемой к бронированию комнаты  и ищем его в списке obj
+    val requestRoom = RequestRoom(4, EquipmentModel(3, EquipmentType.XEROX), RoomType.RELAX_ROOM, "Ivan")
+    val result = EventManagerBuilder().findRoom(requestRoom, obj)
+    println(result)
 }
 
 

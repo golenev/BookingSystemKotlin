@@ -9,6 +9,3 @@ data class RoomModel(
     val equipmentModels: List<EquipmentModel>,
     val roomType: RoomType
 )
-{
-    constructor(id: Int, uniqueName: String, maxCapacity: Int) : this()
-}
