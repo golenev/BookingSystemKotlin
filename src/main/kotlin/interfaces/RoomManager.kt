@@ -1,8 +1,8 @@
-package manager
+package interfaces
 
 import enums.RoomType
-import pojo.EquipmentModel
-import pojo.RoomModel
+import models.EquipmentModel
+import models.RoomModel
 
 interface RoomManager {
 

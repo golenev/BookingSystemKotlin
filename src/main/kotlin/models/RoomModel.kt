@@ -1,4 +1,4 @@
-package pojo
+package models
 
 import enums.RoomType
 

@@ -1,11 +1,11 @@
-package repository
+package services
 
-import manager.EventManager
-import pojo.InvoiceModel
-import pojo.RequestRoom
-import pojo.RoomModel
+import interfaces.EventManager
+import models.InvoiceModel
+import models.RequestRoom
+import models.RoomModel
 
-class EventManagerBuilder :  EventManager{
+class EventManagerService :  EventManager{
 
     override fun findRoom(requestRoom: RequestRoom, available: List<RoomModel>): RoomModel {
         return available.firstOrNull { room ->

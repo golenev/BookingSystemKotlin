@@ -15,16 +15,17 @@ class FileUtils {
         val objectMapper = ObjectMapper().registerModule(JavaTimeModule())
         // Регистрируем модуль Kotlin для работы с data class
         objectMapper.registerKotlinModule()
-
         // Формируем уникальное имя файла
         val fileName = "booking_$uniquePrefix.json"
         // Формируем полный путь к файлу
         val filePath = Paths.get("src/main/resources/", fileName).toString()
-
-        // Сериализуем объект в JSON и сохраняем в файл с pretty print
-        objectMapper.writerWithDefaultPrettyPrinter().writeValue(File(filePath), obj)
-
-        println("JSON сохранен в: $filePath")
+        // Проверяем, существует ли файл с таким же именем и путем
+        val file = File(filePath)
+        if (!file.exists()) {
+            // Сериализуем объект в JSON и сохраняем в файл с pretty print
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, obj)
+            println("JSON сохранен в: $filePath")
+        } else throw IllegalStateException("По данному пути уже существует такой же файл")
     }
 
 }

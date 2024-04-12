@@ -1,7 +1,7 @@
-package manager
+package interfaces
 
 import enums.EquipmentType
-import pojo.EquipmentModel
+import models.EquipmentModel
 
 interface EquipmentManager {
     fun create (quantity: Int, equipmentType: EquipmentType) : EquipmentModel

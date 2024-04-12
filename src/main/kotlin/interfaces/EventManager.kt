@@ -1,11 +1,8 @@
-package manager
+package interfaces
 
-import enums.EquipmentType
-import enums.RoomType
-import pojo.EquipmentModel
-import pojo.InvoiceModel
-import pojo.RequestRoom
-import pojo.RoomModel
+import models.InvoiceModel
+import models.RequestRoom
+import models.RoomModel
 
 interface EventManager {
 

@@ -1,10 +1,10 @@
-package repository
+package services
 
 import enums.EquipmentType
-import manager.EquipmentManager
-import pojo.EquipmentModel
+import interfaces.EquipmentManager
+import models.EquipmentModel
 
-class EquipmentBuilder : EquipmentManager {
+class EquipmentService : EquipmentManager {
 
     override fun create(quantity: Int, equipmentType: EquipmentType): EquipmentModel {
         return EquipmentModel(quantity, equipmentType)
