@@ -1,10 +1,6 @@
 package services
 
-import com.github.javafaker.Faker
-import enums.EquipmentType
-import enums.RoomType
 import interfaces.EventManager
-import models.EquipmentModel
 import models.InvoiceModel
 import models.RequestRoom
 import models.RoomModel
@@ -15,11 +11,11 @@ class EventManagerService : EventManager {
 
     override fun findRoom(requestRoom: RequestRoom, available: List<RoomModel>): RoomModel {
         print("Ищем в базе комнату с параметрами $requestRoom")
-        return available.firstOrNull { availableRoom ->
-            availableRoom.maxCapacity >= requestRoom.guestsQuantity &&
-                    availableRoom.roomType == requestRoom.roomType &&
-                    availableRoom.equipmentModel.equipmentType == requestRoom.desiredEquipmentModel.equipmentType
-            availableRoom.equipmentModel.quantity >= requestRoom.desiredEquipmentModel.quantity
+        return available.firstOrNull {
+            it.maxCapacity >= requestRoom.guestsQuantity &&
+                    it.roomType == requestRoom.roomType &&
+                    it.equipmentModel.equipmentType == requestRoom.desiredEquipmentModel.equipmentType
+            it.equipmentModel.quantity >= requestRoom.desiredEquipmentModel.quantity
         } ?: throw IllegalStateException("Не найдено ни одной подходящей комнаты")
     }
 
