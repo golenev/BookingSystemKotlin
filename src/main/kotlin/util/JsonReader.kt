@@ -22,7 +22,3 @@ class JsonReader {
     }
 }
 
-fun main() {
-    val obj = JsonReader().objectifyJson("booking_roomList.json")
-    println(obj[1].uniqueName)
-}

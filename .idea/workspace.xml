@@ -4,25 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc350b5a-ddf8-4d0d-b67d-f700fa80166f" name="Changes" comment="Готова минимально рабочая версия после рефакторинга.">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/util/RandomGenerator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/BookingTest.kt" afterDir="false" />
+    <list default="true" id="bc350b5a-ddf8-4d0d-b67d-f700fa80166f" name="Changes" comment="написан первый тест и сделан значительный рефакторинг">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/manager/EquipmentManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/interfaces/EquipmentManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/manager/EventManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/interfaces/EventManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/manager/RoomManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/interfaces/RoomManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/BookingModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/BookingModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/EquipmentModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/EquipmentModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/InvoiceModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/InvoiceModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/RequestRoom.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/RequestRoom.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/RoomModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/RoomModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repository/EquipmentBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/services/EquipmentService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repository/EventManagerBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/services/EventManagerService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repository/MeetingRoomRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repository/RoomBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/services/RoomBuilderService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/services/MeetingRoomGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controller/MeetingRoomGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/EntryPoint.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controller/MeetingRoomGenerator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/enums/RoomType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/enums/RoomType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/interfaces/EquipmentManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/interfaces/EquipmentManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/interfaces/EventManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/interfaces/EventManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/interfaces/RoomManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/interfaces/RoomManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/RoomModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/RoomModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/services/EventManagerService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/services/EventManagerService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/services/RoomBuilderService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/services/RoomBuilderService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/JsonReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/JsonReader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/RandomGenerator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/room1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/room2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/room3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/BookingTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/BookingTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,26 +54,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.BookingTest.test.executor": "Run",
-    "Gradle.Build BookingSystemKotlin.executor": "Run",
-    "Kotlin.EntryPointKt.executor": "Run",
-    "Kotlin.JsonReaderKt.executor": "Run",
-    "Kotlin.MeetingRoomGeneratorKt.executor": "Run",
-    "Kotlin.RoomBuilderKt.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/golenev/IdeaProjects/BookingSystemKotlin",
-    "onboarding.tips.debug.path": "/home/golenev/IdeaProjects/BookingSystemKotlin/src/main/kotlin/Main.kt"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.BookingTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build BookingSystemKotlin.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.EntryPointKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.JsonReaderKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MeetingRoomGeneratorKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RoomBuilderKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/golenev/IdeaProjects/BookingSystemKotlin&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/golenev/IdeaProjects/BookingSystemKotlin/src/main/kotlin/Main.kt&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "/home/golenev/.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;/home/golenev/.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -197,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712863948054</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="написан первый тест и сделан значительный рефакторинг">
+      <option name="closed" value="true" />
+      <created>1712941082273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712941082273</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -205,6 +211,7 @@
     <MESSAGE value="Декомпозиция после обсуждения на уроке" />
     <MESSAGE value="Середина большого рефакторинга" />
     <MESSAGE value="Готова минимально рабочая версия после рефакторинга." />
-    <option name="LAST_COMMIT_MESSAGE" value="Готова минимально рабочая версия после рефакторинга." />
+    <MESSAGE value="написан первый тест и сделан значительный рефакторинг" />
+    <option name="LAST_COMMIT_MESSAGE" value="написан первый тест и сделан значительный рефакторинг" />
   </component>
 </project>

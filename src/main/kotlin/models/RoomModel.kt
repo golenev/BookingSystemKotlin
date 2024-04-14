@@ -6,6 +6,6 @@ data class RoomModel(
     val id: Int,
     val uniqueName: String,
     val maxCapacity: Int,
-    val equipmentModels: List<EquipmentModel>,
+    val equipmentModel: EquipmentModel,
     val roomType: RoomType
 )
